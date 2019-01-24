@@ -256,6 +256,7 @@ export interface PolylineOptions {
   strokeWeight?: number;
   visible?: boolean;
   zIndex?: number;
+  icons?: any;
 }
 
 export interface Polyline extends MVCObject {

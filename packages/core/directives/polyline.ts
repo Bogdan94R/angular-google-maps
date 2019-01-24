@@ -89,6 +89,11 @@ export class AgmPolyline implements OnDestroy, OnChanges, AfterContentInit {
   @Input() zIndex: number;
 
   /**
+   * The icons.
+   */
+  @Input() icons: any;
+
+  /**
    * This event is fired when the DOM click event is fired on the Polyline.
    */
   @Output() lineClick: EventEmitter<PolyMouseEvent> = new EventEmitter<PolyMouseEvent>();
@@ -150,7 +155,7 @@ export class AgmPolyline implements OnDestroy, OnChanges, AfterContentInit {
 
   private static _polylineOptionsAttributes: Array<string> = [
     'draggable', 'editable', 'visible', 'geodesic', 'strokeColor', 'strokeOpacity', 'strokeWeight',
-    'zIndex'
+    'zIndex', 'icons'
   ];
 
   private _id: string;

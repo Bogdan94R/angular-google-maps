@@ -33,6 +33,7 @@ export class PolylineManager {
       strokeWeight: line.strokeWeight,
       visible: line.visible,
       zIndex: line.zIndex,
+      icons: line.icons,
       path: path
     });
     this._polylines.set(line, polylinePromise);
